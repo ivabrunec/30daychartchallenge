@@ -4,9 +4,10 @@
 library(dplyr)
 library(ggplot2)
 library(showtext)
+library(ggtext)
 
 font_add_google(name = 'Rubik', family = 'Rubik')
-font_add_google(name = 'Vidaloka', family = 'Vidaloka')
+font_add_google(name = 'BioRhyme', family = 'BioRhyme')
 showtext_auto()
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
@@ -80,21 +81,33 @@ ggsave('temp1.png', width = 6, height = 8, dpi = 300)
 
 
 # plot sorted
+data_long <- data_long[order(data_long$Total,decreasing=F),]
+
 ggplot() +
   geom_tile(data = data_long, aes(x = coord_x, y = coord_y,
-                                           fill = fct_reorder(Characteristics, Total)),
+                                           fill = Characteristics),
             size = .1, color = 'grey96') +
+  #ggforce::geom_circle(data = data_long, aes(x0 = coord_x, y0 = coord_y,
+  #                                           r = .5, fill = Characteristics),
+  #                     color = 'grey96', size = .1)+
   coord_equal() +
   scale_fill_manual(values = col_pal) +
-  guides(fill=guide_legend(nrow=4,byrow=TRUE)) +
-  labs(title = 'Out of every 1,000 Torontonians ...') +
+  guides(fill=guide_legend(nrow=4,byrow=F)) +
+  labs(title = "1,000* Torontonians",
+       subtitle = 'Each square represents a person. The fill of each square represents their ethnic origin.',
+       caption = '* Actual number = 1,024 to make a neat square.\n
+       Data source: Canada Census 2016') +
   theme_void() +
   theme(legend.position = 'bottom',
         legend.title = element_blank(),
         legend.text = element_text(family = 'Rubik', size = 30),
-        plot.title = element_text(family = 'Vidaloka', size = 70,
-                                  lineheight = .3, hjust = .2),
-        plot.background = element_rect(fill = 'grey96', color=NA)) 
+        plot.title = element_text(family = 'BioRhyme', size = 95,
+                                  hjust = .2),
+        plot.subtitle = element_text(family = 'Rubik', size = 30,
+                                     hjust = .5),
+        plot.caption = element_text(family = 'Rubik', size = 25,
+                                    lineheight = .18),
+        plot.background = element_rect(fill = 'grey76', color=NA)) 
 
-ggsave('temp2.png', width = 6, height = 8, dpi = 300)
+ggsave('day_1_final.png', width = 6, height = 8, dpi = 300)
 
