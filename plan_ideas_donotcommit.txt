@@ -1,0 +1,30 @@
+1. part to whole: toronto makeup of population. 1000 dots; of these 1000, how many are...
+2. waffle: for every 100g of waffle, what is it made of (e.g. 50g.. 20g...). each square is a gram
+3. fauna/flora: idk
+4. historical: if data exists, some sort of: over time slovenia was split between how many different countries
+5. slope: 
+6. owid: :( 
+7. hazards: maybe combine with owid - there's data on increasing extreme weather events; that could also work for slope! (so maybe combine 5/6/7)
+8. humans: human biomass over the years? if data exists? or maybe how many friends does each human have over the years (represent as central dot & network around each dot!)
+9. high/low: 
+10. hybrid: 
+11. circular: maybe borrow something from researchremora with the circular 3D plot, but this time with deforestation. e.g. forest cover over the years for a certain country.
+12. bbc news:
+13. pop culture: most number 1s? try something in observable hq borrowing from eg. tanya shapiro?
+14. new tool: the above could count as a new tool if you can figure it out. so combine days 13 & 14
+15. positive/negative: maybe go back to african language sentiments but this time plot one by one tweet
+16. family:
+17. networks: 
+18. eurostat
+19. anthropocene: 
+20. correlation: 
+21. down/upwards:
+22. green energy:
+23. tiles:
+24. un woman:
+25. global change:
+26. local change: (something toronto based?)
+27. good/bad: 
+28. trend:
+29. monochrome:
+30. worldbank: 
