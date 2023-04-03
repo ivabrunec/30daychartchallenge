@@ -75,8 +75,8 @@ ggplot() +
   geom_hline(yintercept = 0, color = text_col) +
   coord_cartesian(ylim=c(-10, 15), xlim=c(1,400)) +
   labs(title = "Beneath the surface: the hidden world of tree roots",
-       subtitle = 'Root depth and lateral spread',
-       caption = 'Data from: ') +
+       subtitle = 'Root depth and lateral spread by taxonomic family',
+       caption = 'Data from: Environmental Data Initiative') +
   annotate("text", label= "Yews:\nshallowest roots", 
            x= 0, y = 10, hjust = 0, color = highlight_col,
            lineheight =.7) +
@@ -95,10 +95,10 @@ ggplot() +
   theme_void() +
   theme(legend.position = 'bottom',
         legend.title = element_blank(),
-        plot.background = element_rect(fill = '#092034'),
-        text = element_text(color = '#cad1bb'),
+        plot.background = element_rect(fill = '#120600'),
+        text = element_text(color = text_col),
         axis.text.y = element_text(color=text_col),
-        plot.title = element_text(hjust = 0, family = )) 
+        plot.title = element_text(hjust = 0, size = 20)) 
   
 ggsave('temp_plot.png', width = 8, height = 6, dpi = 400)
 
@@ -112,10 +112,10 @@ tam <- image_read('tamarisk.png')
 buck <- image_read('buckthorn.png')
 mul <- image_read('mulberry.png')
 
-image1 <- image_composite(plot, image_scale(yew,"150x150"), offset = "+390+450")
-image2 <- image_composite(image1, image_scale(br_nut,"150x150"), offset = "+1300+460")
-image3 <- image_composite(image2, image_scale(tam,"150x150"), offset = "+2000+540")
-image4 <- image_composite(image3, image_scale(buck,"150x150"), offset = "+2400+320")
-image_final <- image_composite(image4, image_scale(mul,"150x150"), offset = "+3000+630")
+image1 <- image_composite(plot, image_scale(yew,"150x150"), offset = "+390+480")
+image2 <- image_composite(image1, image_scale(br_nut,"150x150"), offset = "+1300+530")
+image3 <- image_composite(image2, image_scale(tam,"150x150"), offset = "+2000+590")
+image4 <- image_composite(image3, image_scale(buck,"150x150"), offset = "+2400+370")
+image_final <- image_composite(image4, image_scale(mul,"150x150"), offset = "+3000+700")
 
-image_write(image_final, 'test_final.png')
+image_write(image_final, 'day_3_flora_final.png')
