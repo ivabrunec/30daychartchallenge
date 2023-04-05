@@ -54,5 +54,5 @@ ggplot() +
         axis.title = element_text(color = '#0a0b1b', size = 30, family=font_fam))
 
 
-ggsave('temp.png', height = 6, width = 4, dpi = 300)  
+ggsave('day_4_historic.png', height = 6, width = 5, dpi = 300)  
                                      
