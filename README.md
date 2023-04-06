@@ -9,5 +9,8 @@ I probably won't update every day but I'll do my best!
 ## Day 3: [Flora & fauna](/day_3_flora/day_3_flora.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_3_flora/day_3_flora_final.png)
 
-## Day 4: [Historic](/day_4_historic/day_3_historic.R)
+## Day 4: [Historic](/day_4_historic/day_4_historic.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_4_historic/day_4_historic.png)
+
+## Day 5: [Slope](/day_5_slope/day_5_slope.R)
+![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_5_slope/day_5_slope.png)
