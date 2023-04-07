@@ -57,5 +57,4 @@ lang_sum$pathString <- paste("world",
 population <- as.Node(lang_sum)
 
 circlepackeR(population, size = "value",
-             color_min = "#003763", color_max = "#efe5ff")
-
+             color_min = "#622a54", color_max = "#ef9478")
