@@ -14,3 +14,7 @@ I probably won't update every day but I'll do my best!
 
 ## Day 5: [Slope](/day_5_slope/day_5_slope.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_5_slope/day_5_slope.png)
+
+## Day 7: [Hazards](/day_7_hazards/day_7_hazards.R)
+![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_7_hazards/day_7_languages.png)
+
