@@ -42,10 +42,6 @@ data_19_long <- data_19 |>
     values_drop_na = TRUE
   ) 
 
-# remove all zero values?
-#data_20_long <- filter(data_20_long, time != 0)
-#data_19_long <- filter(data_19_long, time != 0)
-
 # add year to each df
 data_20_long$year <- 2020
 data_19_long$year <- 2019
@@ -81,7 +77,6 @@ data_sum <- data_all |>
 top_2019 <- filter(data_sum, year == 2019) |>
   # remove sleeping & 'insufficient detail' categories
   filter(act != '010101' & act != '500101') |>
-  #group_by(interval) |>
   slice_max(order_by = mean_time, n=20)
 
 data_sum_keep <- filter(data_sum,
@@ -89,9 +84,9 @@ data_sum_keep <- filter(data_sum,
 
 levels(data_sum_keep$interval) <- c("15-30 years", "30-50 years", 
                                     "50-70 years", "70-85 years")
-#data_sum_keep$year <- as.factor(data_sum_keep$year)
-
-library(khroma)
+data_sum_keep$Activity <- gsub(c("\\)"),"",data_sum_keep$Activity)
+data_sum_keep$Activity <- gsub(c("\\("),"",data_sum_keep$Activity)
+data_sum_keep$Activity <- gsub(c("not religious"),"",data_sum_keep$Activity)
 ggplot(data = data_sum_keep, 
        aes(x = year, y = mean_time, 
            group = Activity, color = Activity)) +
@@ -102,7 +97,8 @@ ggplot(data = data_sum_keep,
   scale_x_continuous(breaks = c(2019, 2020)) +
   facet_wrap(~interval, ncol = 4) +
   guides(color=guide_legend(nrow=3,byrow=TRUE)) +
-  labs(title = 'A different year: A matter of minutes') +
+  labs(title = 'A different year: A matter of minutes',
+       caption = 'Data from: American Time Use Survey') +
   xlab('') +
   ylab('Mean time (minutes)')+
   theme_minimal() +
@@ -112,6 +108,7 @@ ggplot(data = data_sum_keep,
         legend.title = element_blank(),
         legend.text = element_text(size = 30),
         plot.title = element_text(family = 'BlackOps', size = 70),
+        plot.caption = element_text(size = 20),
         panel.grid.major = element_line(linewidth = .1, color='grey50'),
         panel.grid.minor = element_line(linewidth = .1, color='grey50'),
         plot.background = element_rect('grey17'),
@@ -120,6 +117,6 @@ ggplot(data = data_sum_keep,
         axis.text = element_text(color = 'white', size = 30),
         axis.title = element_text(color = 'white', size = 30)) 
 
-ggsave('temp.png', height = 6, width = 8, dpi = 300)
+ggsave('day_5_slope.png', height = 6, width = 8, dpi = 300)
 
 
