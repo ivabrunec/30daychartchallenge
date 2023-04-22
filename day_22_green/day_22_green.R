@@ -101,5 +101,5 @@ ggplot(data = data_prov_ter) +
         plot.subtitle = element_text(size = 25, color = 'black', 
                                      family = 'Inter',lineheight = .1))
 
-ggsave('temp.png', width = 6, height = 4)
+ggsave('day_22_green.png', width = 6, height = 4, dpi= 300)
 
