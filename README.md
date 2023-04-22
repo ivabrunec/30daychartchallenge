@@ -24,6 +24,8 @@ I probably won't update every day but I'll do my best!
 ## Days 10 & 11: [Hybrid & Circular](/day_10_11_hybrid_circular/day_10_11_hybrid_circular.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_10_11_hybrid_circular/day_10_11.png)
 
-## Days 18: [EuroStat](/day_18_eurostat/day_18_eurostat.R)
+## Day 18: [EuroStat](/day_18_eurostat/day_18_eurostat.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_18_eurostat/day_18_eurostat.png)
 
+## Day 22: [Green Energy](/day_18_eurostat/day_22_green.R)
+![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_22_green/day_22_green.png)
