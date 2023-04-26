@@ -27,5 +27,8 @@ I probably won't update every day but I'll do my best!
 ## Day 18: [EuroStat](/day_18_eurostat/day_18_eurostat.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_18_eurostat/day_18_eurostat.png)
 
-## Day 22: [Green Energy](/day_18_eurostat/day_22_green.R)
+## Day 22: [Green Energy](/day_22_green/day_22_green.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_22_green/day_22_green.png)
+
+## Day 23: [Tiles](/day_23_tiles/day_23_tiles.R)
+![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_23_tiles/day_23_tiles.png)
