@@ -32,3 +32,6 @@ I probably won't update every day but I'll do my best!
 
 ## Day 23: [Tiles](/day_23_tiles/day_23_tiles.R)
 ![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_23_tiles/day_23_tiles.png)
+
+## Day 29: [Monochrome](/day_29_monochrome/monochrome.html)
+![contribution_image](https://github.com/ivabrunec/30daychartchallenge/blob/main/day_29_monochrome/day_29_monochrome.png)

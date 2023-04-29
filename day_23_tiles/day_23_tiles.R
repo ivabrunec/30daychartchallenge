@@ -63,7 +63,8 @@ colors <- c(      "#7d4e3b",
 
 ggplot() +
   geom_tile(data = text_plot,
-            aes(x = y, y = x, fill = mean_val)) +
+            aes(x = y, y = x, fill = mean_val),
+            color='#262F2F', linewidth=.2) +
   geom_text(data = title_df, aes(x = x, y = y, label = text), 
             angle = -90, hjust = -.05, size = 90,
             family = 'Abril', fontface = 'bold',
