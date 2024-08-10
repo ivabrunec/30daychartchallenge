@@ -5,6 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(showtext)
 library(ggtext)
+library(stringr)
 
 font_add_google(name = 'Rubik', family = 'Rubik')
 font_add_google(name = 'BioRhyme', family = 'BioRhyme')
@@ -30,7 +31,7 @@ census_data_to <- census_data_to |>
   mutate(total_count = sum(Total)) |>
   mutate(prop_population = ceiling((Total / total_count) * 1021),0)
 
-data_long <- uncount(census_data_to, prop_population)
+data_long <- tidyr::uncount(census_data_to, prop_population)
 
 # generate two vectors of random values between 1 & 32
 coord_y <- rep(32:1,each=32)
