@@ -52,8 +52,8 @@ ggplot() +
   geom_hline(yintercept = 8, linetype = "dashed") +
   geom_text(data = proportion_less_than_8,
             aes(x = age_group, y = -0.7, label = paste0(round(percentage,1),'%')),
-            family = 'dm', size = 10) +
-  scale_color_manual(values = c("TRUE" = "red", "FALSE" = "grey40")) +
+            family = 'dm', size = 14, color = 'black') +
+  scale_color_manual(values = c("TRUE" = "#E94F37", "FALSE" = "grey40")) +
   labs(y = "Self-reported hours of sleep",
        title = "Sleepless in Saskatoon",
        subtitle = "How many Canadians are getting less than 8h of sleep per night?",
