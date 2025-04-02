@@ -12,7 +12,7 @@ library(haven)
 font_add_google(name = 'DM Sans', family = 'dm')
 showtext_auto()
 
-tu_2022 <- read_sas('../TU_ET_2022/Data_Données/TU_ET_2022_Main-Principal_PUMF.sas7bdat') 
+tu_2022 <- read_sas('../time_use_survey/TU_ET_2022/Data_Données/TU_ET_2022_Main-Principal_PUMF.sas7bdat') 
 
 dat <- tu_2022 |>
   dplyr::select(AGEGR10, DUR101) |>
