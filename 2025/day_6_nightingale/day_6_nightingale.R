@@ -51,7 +51,8 @@ ggplot() +
   scale_y_continuous(labels = scales::percent_format()) +
   scale_fill_manual(values = col_pal) +
   labs(title = 'A Do-It-Yourself Diagram',
-       subtitle = 'The biggest months for D.I.Y. projects are May, August, and September.') +
+       subtitle = 'The biggest months for D.I.Y. projects are May, August, and September.',
+       caption = 'Data: Canadian Time Use Survey 2022') +
   theme_minimal() +
   theme(axis.text.y = element_blank(),
         axis.text.x = element_text(size = 8, color = 'black'),
@@ -62,7 +63,7 @@ ggplot() +
         legend.key.width =  unit(0.3, "cm"),
         text = element_text(family = 'Inconsolata'),
         plot.title = element_text(size = 20, face = 'bold'),
-        plot.subtitle = element_text(family = 'Arial'),
+        plot.caption = element_text(family = 'Arial', size = 6),
         plot.background = element_rect(fill = '#D7EAD7', color = NA)) +
   coord_curvedpolar()
 
