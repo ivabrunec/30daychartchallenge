@@ -99,7 +99,8 @@ ggplot() +
   labs(x = 'Duration (h)',
        y = 'Proportion of responses',
        title = 'The geometry of routine',
-       subtitle = 'Distributions of time spent studying, working, and sleeping across age') +
+       subtitle = 'Distributions of time spent studying, working, and sleeping across age',
+       caption = 'Data: The Canadian Time Use Survey') +
   theme_minimal() +
   theme(legend.position = 'right',
         legend.title = element_blank(),
@@ -110,6 +111,7 @@ ggplot() +
         strip.text = element_text(color = 'black', size = 42),
         axis.title = element_text(color = 'grey30'),
         plot.title = element_text(family = 'bowlby', size = 60, color = 'grey30'),
+        plot.caption = element_text(size = 20),
         panel.spacing = unit(1.2, "lines"))
 
 ggsave('day_10_multimodal.png', height = 10, width = 8, dpi = 300)
